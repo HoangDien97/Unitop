@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector next only</title>
+</head>
+
+<body>
+    <style>
+        article img {
+            max-width: 500px;
+        }
+        
+        article img+p {
+            font-style: italic;
+            color: rgb(23, 175, 137);
+        }
+    </style>
+    <article>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <img src="../css/images/san-bong-da.jpg" alt="san-bong-da" title="san-bong-da">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, inventore.</p>
+    </article>
+</body>
+
+</html>

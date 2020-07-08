@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhóm phương thức về thuộc tính</title>
+    <script src="js/jquery-3.5.1.js"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            //1. Click vào thẻ a lấy thông tin liên kết
+            $("a.get_link_img").click(function() {
+                var link_img;
+                link_img = $("img").attr("src");
+                alert(link_img);
+                return false;
+
+
+                // var link_img;
+                // link_img = $("img").attr("title");
+                // alert(link_img);
+                // return false;
+
+
+                // var width_img;
+                // width_img = $("img").attr('width', '500');
+                // alert(width_img);
+                // return false;   
+
+
+                // var data_href;
+                // data_href = $("img").attr('data-href');
+                // alert(data_href);
+                // return false;
+
+
+            });
+
+
+            // Hủy thuộc tính attr
+            // $("a.removeAttr").click(function() {
+            //     $("img").removeAttr("src");
+            //     $("img").removeAttr("data-href");
+            //     return false;
+            // });
+
+
+
+        });
+    </script>
+    <img data-href="abc.html" width="300" src="images/product-1.jpg" alt="" title="audi">
+    <a class="get_link_img" href="#">Lấy thông tin</a>
+    <a class="removeAttr" href="#">Hủy thông tin</a>
+
+</body>
+
+</html>

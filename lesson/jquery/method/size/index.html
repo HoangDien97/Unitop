@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhóm phương thức kích thước</title>
+    <script src="js/jquery-3.5.1.js"></script>
+</head>
+
+<body>
+    <style type="text/css">
+        .box {
+            border: 1px solid rebeccapurple;
+            width: 200px;
+            min-height: 100px;
+            margin: 20px 0px;
+        }
+        
+        #box_1 {
+            padding: 20px 10px;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // var height_box_1, inner_height_box_1, outer_height_box_1;
+            // height_box_1 = $('#box_1').height();
+            // inner_height_box_1 = $('#box_1').innerHeight();
+            // outer_height_box_1 = $('#box_1').outerHeight();
+
+            // console.log(height_box_1 + '-' + inner_height_box_1 + '-' + outer_height_box_1);
+
+            var width_box_1, inner_width_box_1, outer_width_box_1;
+            width_box_1 = $('#box_1').width();
+            inner_width_box_1 = $('#box_1').innerWidth();
+            outer_width_box_1 = $('#box_1').outerWidth();
+
+            console.log(width_box_1 + '-' + inner_width_box_1 + '-' + outer_width_box_1);
+
+            // $('.box').height(height_box_1);
+        });
+    </script>
+
+    <div class="box" id="box_1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere dolor illum vitae cupiditate alias assumenda provident est nobis aliquam quis. Illo ut beatae animi, quia ex at! Quisquam rem dicta perferendis doloremque error nam, recusandae tempora
+        tempore, delectus voluptas harum veniam nisi porro distinctio sit! Cupiditate aperiam tempora at eligendi magni harum vero dolorum deserunt debitis praesentium ratione soluta cum laudantium aut tenetur quo, ea iusto nulla molestiae placeat. Vero
+        quibusdam quo repellendus eaque repellat maiores! Incidunt dicta perspiciatis pariatur? Magnam veniam architecto quae est eveniet repudiandae quasi accusamus? Ipsam voluptates non nemo placeat, ab ducimus natus! Dolore, tempore exercitationem.</div>
+    <div class="box" id="box_2">Box 2</div>
+    <div class="box" id="box_3">Box 3</div>
+</body>
+
+</html>

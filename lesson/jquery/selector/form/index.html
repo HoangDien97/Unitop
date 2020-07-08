@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector form</title>
+    <script src="js/jquery-3.5.1.js"></script>
+</head>
+
+<body>
+    <style type="text/css">
+        form * {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            //1. Đếm số lượng input trên form
+            // var num_input = $("form :input").length;
+            // alert(num_input);
+
+            //2. Input text border red
+            // $("form :text").css('border', '1px solid #f00');
+
+            //3. Đếm số lượng phần tử select đã được chọn
+            // var input_select_selected = $("form :selected");
+            // input_select_selected.each(function() {
+            //     alert($(this).text());
+            // });
+
+
+            // var input_checkbox_checked = $("form :checkbox:checked");
+            // input_checkbox_checked.each(function() {
+            //     alert($(this).val());
+            // });
+
+            $("form :disabled").css('border', '1px solid red');
+
+
+        });
+    </script>
+    <form action="">
+        <input type="text" name="">
+        <input type="password" name="" disabled=disabled>
+        <input type="checkbox" class="hobby" value="game">
+        <input type="checkbox" class="hobby" value="shopping" checked=checked>
+        <input type="checkbox" class="hobby" value="read_book" checked=checked>
+        <input type="radio" name="">
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <input type="submit" name="">
+        <input type="file" name="">
+        <select name="" id="">
+        <option value="">Lựa chọn</option>
+        <option value="">PHP</option>
+        <option value="" selected="selected">Jquery</option>
+    </select>
+    </form>
+
+
+
+</body>
+
+</html>

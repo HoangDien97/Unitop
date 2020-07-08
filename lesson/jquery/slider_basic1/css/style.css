@@ -1,0 +1,45 @@
+body {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 23px;
+}
+
+#wrapper {
+    width: 960px;
+    margin: 0px auto;
+}
+
+h1 {
+    font-size: 30px;
+    padding: 20px 0px;
+}
+
+#wp-slider {
+    width: 350px;
+    margin-top: 20px;
+}
+
+#show {
+    height: 350px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+#wp-list-thumb ul#list-thumb li {
+    width: 80px;
+    margin-right: 10px;
+    float: left;
+}
+
+#wp-list-thumb ul#list-thumb li:last-child {
+    margin-right: 0;
+}
+
+#wp-list-thumb ul#list-thumb li img {
+    max-width: 100%;
+    display: block;
+}
+
+#wp-list-thumb ul#list-thumb li.active {
+    border: 1px solid #f1c40f;
+}

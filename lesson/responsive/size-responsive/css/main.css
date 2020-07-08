@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 23px;
+    color: #333;
+}
+
+#wrapper {
+    width: 960px;
+    margin: 0px auto;
+}
+
+#header,
+#footer {
+    padding: 15px 10px;
+    background: cornflowerblue;
+    clear: both;
+}
+
+#content,
+#sidebar {
+    min-height: 500px;
+    padding: 10px;
+}
+
+#content {
+    width: 70%;
+    background: pink;
+    float: left;
+}
+
+#sidebar {
+    width: 30%;
+    background: yellow;
+    float: right;
+}

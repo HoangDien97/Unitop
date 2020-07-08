@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cấu trúc điều khiển if</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // var a = 9;
+        // if (a % 2 == 0) {
+        //     document.write(a + ' Là số chẵn');
+        // } else {
+        //     document.write(a + ' Là số lẻ')
+        // }
+
+        score = 8.6;
+        if ((score >= 0) && (score <= 10)) {
+            if (score < 4) {
+                document.write('F');
+            } else if (score < 5.5) {
+                document.write('D');
+            } else if (score < 7.5) {
+                document.write('C');
+            } else if (score < 8.5) {
+                document.write('B');
+            } else {
+                document.write('A');
+            }
+        } else {
+            document.write('Điểm không hợp lệ, điểm thuộc vào [0,10]');
+        }
+    </script>
+</body>
+
+</html>

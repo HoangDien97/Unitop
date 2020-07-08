@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập về hàm</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // 1. Viết hàm kiểm tra tính chia hết cho k của n(Trả về dạng boolean)
+        // function divisible(n, k) {
+        //     if (n % k == 0)
+        //         return true;
+        //     return false;
+        // }
+        // alert(divisible(20, 2));
+
+
+
+
+        // 2. Viết hàm tính tích các số nguyên chia hết cho k trong đoạn từ 1 đến n
+        // function multiplication(n, k) {
+        //     var T = 1;
+        //     if (n >= k) {
+        //         for (var i = 1; i <= n; i+) {
+        //             if (i % k == 0) {
+        //                 T *= i;
+        //             }
+        //         }
+        //         return T;
+        //     }
+        // }
+        // alert(multiplication(9, 3));
+
+
+
+        // 3. Viết hàm kiểm tra số nguyên tố 
+        // function checkPrimeNumber(n) {
+        //     // Biến cờ hiệu
+        //     var flag = true;
+
+        //     // Nếu n bé hơn 2 tức là không phải số nguyên tố
+        //     if (n < 2) {
+        //         flag = false;
+        //     } else {
+        //         // lặp từ 2 tới n-1
+        //         for (var i = 2; i < n - 1; i++) {
+        //             if (n % i == 0) {
+        //                 flag = false;
+        //             }
+        //         }
+        //     }
+        //     // Kiểm tra biến flag
+        //     if (flag == true) {
+        //         document.write(n + " là số nguyên tố <br/>");
+        //     } else {
+        //         document.write(n + " không phải là số nguyên tố <br/>");
+        //     }
+        // }
+        // checkPrimeNumber(1);
+        // checkPrimeNumber(2);
+        // checkPrimeNumber(3);
+        // checkPrimeNumber(4);
+        // checkPrimeNumber(5);
+        // checkPrimeNumber(6);
+        // checkPrimeNumber(7);
+        // checkPrimeNumber(8);
+
+
+
+
+
+
+        // 4. Viết hàm tính tổng các số nguyên tố từ 2 đến n 
+        function checkPrimeNumber(n) {
+            var prime = true;
+            for (var i = 2; i < n; i++) {
+                if (n % i == 0) {
+                    prime = false;
+                }
+            }
+            return prime;
+        }
+
+        function totalCheckPrimeNumber(n) {
+            var total = 0;
+            for (var k = 2; k <= n; k++) {
+                if (checkPrimeNumber(k) == true) {
+                    total += k;
+                }
+            }
+            document.write(total);
+        }
+        totalCheckPrimeNumber(10);
+    </script>
+</body>
+
+</html>

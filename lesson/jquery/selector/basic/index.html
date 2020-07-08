@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhóm selector cơ bản</title>
+    <script src="js/jquery-3.5.1.js"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            //1. Thiết lập text color red
+            $('p').css('color', 'red');
+            //2. Thiết lập các box có css(width:200px,height:100px,margin:20px,border:1px solid #333)
+            $('.box').css({
+                'width': '200px',
+                'height': '100px',
+                'margin': '20px',
+                'border': '1px solid #333',
+                'padding-left': '5px'
+            });
+            //3. Thiết lập box1 có background black
+            $('#box1').css('background', 'black');
+            //4. thiết lập box2, box3 có backgroud gold
+            $('#box2,#box3,p').css('background', 'gold');
+        });
+    </script>
+    <div id="box1" class="box">
+        <p>Nội dung khối 1</p>
+    </div>
+    <div id="box2" class="box">
+        <p>Nội dung khối 2</p>
+    </div>
+    <div id="box3" class="box">
+        <p>Nội dung khối 3</p>
+    </div>
+    <div id="box4" class="box">
+        <p>Nội dung khối 4</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiệu ứng show,hide</title>
+    <script src="js/jquery-3.5.1.js"></script>
+</head>
+
+<body>
+    <style type="text/css">
+        #box {
+            width: 200px;
+            padding: 40px;
+            background: #2ecc71;
+            color: blanchedalmond;
+            text-align: center;
+            display: none;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#effect-show").click(function() {
+                // $("#box").show();
+                $("#box").show(1000);
+                // $("#box").show(1000, function() {
+                //     alert("done...");
+                // });
+            });
+            $("#effect-hide").click(function() {
+                $("#box").hide(1000);
+            });
+            $("#effect-toggle").click(function() {
+                $("#box").toggle(1000);
+            });
+        });
+    </script>
+    <h1>Hiệu ứng show-hide trong jquery</h1>
+    <a href="#" id="effect-show">Show</a>
+    <a href="#" id="effect-hide">Hide</a>
+    <a href="#" id="effect-toggle">Toggle</a>
+    <div id="box">
+        BOX
+    </div>
+</body>
+
+</html>

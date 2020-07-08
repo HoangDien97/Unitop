@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display flex grow</title>
+</head>
+
+<body>
+    <style>
+        .container {
+            background: blanchedalmond;
+            display: flex;
+            /* justify-content: space-evenly; */
+        }
+        
+        .flex-item {
+            background: coral;
+            width: 100px;
+            padding: 30px;
+            color: white;
+            text-align: center;
+            margin: 10px;
+        }
+        
+        .item-1 {
+            /* flex-grow: 1; */
+            flex-grow: 0.4;
+        }
+        
+        .item-2 {
+            /* flex-grow: 2; */
+            flex-grow: 0.6;
+        }
+    </style>
+    <h1>Display Flex Grow</h1>
+    <div class="container">
+        <div class="flex-item item-1">1</div>
+        <div class="flex-item item-2">2</div>
+    </div>
+</body>
+
+</html>

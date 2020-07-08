@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập selector</title>
+</head>
+
+<body>
+    <style>
+        #wrapper {
+            width: 960px;
+            margin: 0px auto;
+            font-family: 'Times New Roman', Times, serif'
+
+        }
+        
+        article h1 {
+            background: powderblue;
+            font-size: 50px;
+        }
+        
+        article h2 {
+            color: orange;
+            font-size: 30px;
+        }
+        
+        article h2.text-orange {
+            color: lawngreen;
+        }
+        
+        article form {
+            font-size: 20px;
+        }
+        
+        input:checked+label {
+            color: red;
+        }
+        
+        article p {
+            font-size: 20px;
+        }
+        
+        article p.text-green a {
+            color: red;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        
+        article p.text-green a:hover {
+            color: seagreen;
+        }
+        
+        article h1:hover {
+            background: sienna;
+        }
+    </style>
+    <div id="wrapper">
+        <article>
+            <h1>Bài tập Selector Css - Unitop.vn</h1>
+            <h2>Lorem Ipsum là gì?</h2>
+            <p class="text-green"><a href="https://www.lipsum.com/">Lorem
+                        Ipsum</a> chỉ đơn giản là văn bản giả của ngành công nghiệp in ấn và sắp chữ. Lorem Ipsum đã trở thành văn bản giả tiêu chuẩn của ngành công nghiệp kể từ những năm 1500, khi một nhà in không rõ đã lấy một loại galley và xáo trộn
+                nó để tạo ra một cuốn sách mẫu vật. Nó đã tồn tại không chỉ năm thế kỷ, mà còn là bước nhảy vọt trong việc sắp chữ điện tử, về cơ bản vẫn không thay đổi. Nó được phổ biến vào những năm 1960 với việc phát hành các tờ Letraset có chứa các
+                đoạn Lorem Ipsum và gần đây với phần mềm xuất bản trên máy tính để bàn như Aldus PageMaker bao gồm các phiên bản của Lorem Ipsum.
+            </p>
+            <h2 class="text-orange">Tại sao lại sử dụng nó?</h2>
+            <p>Một thực tế lâu nay là người đọc sẽ bị phân tâm bởi nội dung có thể đọc được của một trang khi nhìn vào bố cục của nó. Điểm quan trọng của việc sử dụng Lorem Ipsum là nó có sự phân phối các chữ cái ít nhiều bình thường, trái ngược với việc
+                sử dụng 'Nội dung ở đây, nội dung ở đây', khiến nó giống như tiếng Anh có thể đọc được. Nhiều gói xuất bản trên máy tính để bàn và trình chỉnh sửa trang web hiện sử dụng Lorem Ipsum làm văn bản mô hình mặc định của họ và tìm kiếm 'lorem
+                ipsum' sẽ phát hiện ra nhiều trang web vẫn còn trong giai đoạn trứng nước. Các phiên bản khác nhau đã phát triển qua nhiều năm, đôi khi là tình cờ, đôi khi có chủ đích (tiêm hài hước và tương tự).</p>
+            <h2>Khóa học</h2>
+            <form action="">
+                <input type="checkbox" name="html-css" id="html-css">
+                <label for="html-css">Html css 21 ngày</label><br>
+                <input type="checkbox" name="bootstrap" id="bootstrap">
+                <label for="bootstrap">Bootstrap AZ</label><br>
+                <input type="checkbox" name="php" id="php">
+                <label for="php">Php Master</label>
+            </form>
+        </article>
+    </div>
+</body>
+
+</html>

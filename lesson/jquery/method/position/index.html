@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhóm phương thức theo tọa độ, khoảng cách</title>
+    <script src="js/jquery-3.5.1.js"></script>
+</head>
+
+<body>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            font-style: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 25px;
+        }
+        
+        #wrapper {
+            width: 960px;
+            margin: 0px auto;
+        }
+        
+        #header,
+        #footer {
+            padding: 20px 0px;
+            background: #333;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        
+        #content {
+            padding: 20px 0px;
+        }
+        
+        #content p {
+            margin-bottom: 15px;
+        }
+        
+        .widget {
+            width: 100px;
+            height: 50px;
+            background: red;
+            position: absolute;
+            top: 200px;
+            left: 400px;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // var window_scroll_top, window_scroll_left;
+            // $(window).scrollTop(200);
+            // $(window).scroll(function() {
+            //     window_scroll_top = $(window).scrollTop();
+            //     window_scroll_left = $(window).scrollLeft();
+            //     console.log(window_scroll_top + '-' + window_scroll_left);
+            // });
+
+            // var content_top = $('#content').offset().top;
+            // var footer_top = $('#footer').offset().top;
+            // console.log(content_top + '-' + footer_top);
+
+            var widget_top_content, widget_left_content;
+            widget_top_content = $('.widget').position().top;
+            widget_left_content = $('.widget').position().left;
+            console.log(widget_top_content + '-' + widget_left_content);
+
+
+        });
+    </script>
+    <div id="wrapper">
+        <div id="header">
+            Header
+        </div>
+        <!-- End heaer  -->
+        <div id="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, fugiat blanditiis minus explicabo ratione aut soluta tenetur quis culpa sunt deserunt facere vel quibusdam. Error similique voluptatibus ipsum suscipit molestias quod minima
+                placeat ipsam rerum dolorem itaque, facilis a, et nulla velit maiores provident. Voluptates reprehenderit repellendus voluptatem nesciunt dolore explicabo necessitatibus enim adipisci eius doloremque, reiciendis tenetur harum? Est doloremque
+                veniam expedita itaque deleniti, architecto nemo obcaecati sunt? Est quo soluta natus. Quas, alias? Quis, doloremque labore, repellat deserunt dolores necessitatibus sed ex, ratione est laudantium voluptate rerum molestias amet voluptas
+                tenetur? Dolorem soluta blanditiis, minima alias reiciendis quasi dolor laudantium sapiente velit consequatur molestiae facere perferendis corporis assumenda harum consectetur accusamus. Error corporis dicta in velit sequi vero quis aliquam
+                delectus repellat vitae sed vel perspiciatis aliquid cum sint ex aut et necessitatibus, laborum cumque totam reiciendis. Consequuntur officiis id saepe rerum quos odit tempore cupiditate, magni dolore?</p>
+            <p>Blanditiis harum mollitia eaque sint. Perferendis, enim illo totam dicta in reprehenderit soluta laborum rerum aliquam incidunt non voluptatum tenetur debitis illum repellat harum modi eius corporis atque odit. Nulla officiis odio explicabo
+                tempore praesentium dolor nostrum repellat inventore. Vero, quas, animi perferendis modi ab nulla iste eligendi adipisci, tempora suscipit incidunt harum molestias error obcaecati tempore aspernatur qui ipsa! Dignissimos ipsam pariatur
+                soluta quam nesciunt dolores maiores iusto. Et quos illo, aspernatur non veritatis repellat iusto! Quo quidem ipsum quibusdam nulla ad? Doloribus modi temporibus, qui distinctio atque excepturi quasi possimus libero animi vitae deserunt
+                blanditiis nihil facilis quidem minus mollitia aliquid esse veritatis cumque optio ipsa labore corporis? Architecto error ratione, ad deserunt deleniti et. Similique dolores animi unde dolorum minus quis doloribus, aliquid nobis cupiditate
+                nemo enim nam debitis reprehenderit pariatur quia sint eligendi illo? Natus nostrum magni quaerat ipsa debitis vel iure iste repellendus excepturi eveniet?</p>
+            <div class="widget">
+                Widget
+            </div>
+            <p>Officia tempora ipsa nobis illum pariatur facilis deleniti autem architecto iusto voluptatibus nam, adipisci delectus quam aperiam dolorem quidem cum blanditiis. Optio vel magni asperiores nostrum ducimus blanditiis provident, enim atque neque,
+                magnam architecto eius ut ullam suscipit odit incidunt est cum officiis necessitatibus veritatis officia rerum aliquam. Dignissimos magni repellendus unde hic sequi molestias, aspernatur, quae, numquam dolore blanditiis tenetur ab vero
+                culpa eligendi perferendis. Natus porro ullam magnam quos praesentium aut laboriosam consectetur! Illo laudantium quidem sed eveniet! Eveniet fugiat earum, id sequi cupiditate minima! Illo, accusantium expedita aliquid enim ducimus asperiores,
+                harum accusamus quod hic natus eos omnis tempore ipsa delectus unde cupiditate laboriosam culpa commodi vel cumque. Eius, quam odio natus, debitis possimus sint magnam totam doloribus nulla exercitationem qui voluptas in dolores ut ipsum
+                aut, asperiores veritatis eligendi delectus. Nisi, iure vel unde dolores inventore et explicabo, nemo similique saepe quisquam porro beatae eos qui.</p>
+            <p>Maxime, quod sed voluptatum aspernatur facilis, ea eius, iste corrupti eveniet accusantium voluptatibus laborum rerum enim cupiditate nam ad? Quasi voluptate veniam aut, iste similique repellendus, quam eos, hic tenetur officia eveniet illo
+                totam? Unde voluptates animi qui sunt harum minus, consequatur laborum? Pariatur, officia animi, quidem voluptas unde doloremque iure ad itaque, id fuga amet corporis. Perferendis, officia odit dolore laboriosam beatae aperiam similique
+                tempore optio ad dignissimos molestiae nulla reprehenderit animi quos non. Temporibus nobis illo quasi alias. Asperiores illo temporibus ea beatae quisquam quia sit. Officiis numquam voluptatum, dolorum, sed ullam eius expedita molestiae
+                amet delectus natus veritatis sapiente voluptatibus suscipit modi voluptatem et ea aperiam nobis architecto enim quasi sunt qui? Temporibus neque debitis dicta cum ut obcaecati fugit est earum inventore! Magni quisquam fugit eum at atque
+                ullam non quibusdam sunt architecto quam sint officia, ad asperiores blanditiis obcaecati fugiat quia ut alias tenetur temporibus?</p>
+            <p>Tempora perferendis, voluptatem itaque perspiciatis officia quidem numquam deleniti qui illum odit quos nesciunt eius non praesentium quisquam libero cupiditate, exercitationem nam quas fugiat laudantium deserunt eaque? Assumenda aliquam laboriosam,
+                error odit temporibus rem quasi dicta mollitia dolore vitae tempore reprehenderit. Hic aliquid ratione eum fugiat ipsum quaerat beatae? Id quisquam, dolorem laboriosam accusamus quas vel cupiditate corrupti perferendis quasi atque culpa
+                distinctio expedita quam quae nobis ab magnam fugit maiores illum recusandae exercitationem, libero, sit ipsum. Delectus quo, facere quis doloribus aut explicabo excepturi laudantium commodi. Obcaecati recusandae ab, illo autem molestiae
+                cum dignissimos eveniet aut quaerat consequatur a, sunt debitis quisquam, facere odio corporis velit. Nulla qui ullam cumque! Aliquam, facere. Perspiciatis culpa possimus aliquam at quis, iure consequatur, incidunt ipsam nisi, praesentium
+                ipsa. Ab aspernatur laboriosam ad placeat, amet minus nam officia. Eos, accusamus dicta debitis consequatur veritatis numquam laboriosam deleniti unde consequuntur eum voluptas architecto tempora.</p>
+        </div>
+        <!-- End content  -->
+        <div id="footer">
+            Footer
+        </div>
+        <!-- End footer  -->
+    </div>
+
+</body>
+
+</html>

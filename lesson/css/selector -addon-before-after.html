@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Before After</title>
+</head>
+
+<body>
+    <style>
+        h1:before {
+            content: "✪";
+            color: deepskyblue;
+        }
+        
+        h1:after {
+            content: "✸";
+            color: lime;
+        }
+        
+        .list-post a.new:after {
+            content: url("https://lh3.googleusercontent.com/proxy/LstZPABZG4N6FDLh10pJZCnqG4b3cwDqtpCYf0O6_JhZX5BoN9zWA4cE1hzOtGHlISfShZxQFkaSHD-H5m8-5YpyDKIaTzWQJ45k224z  ");
+        }
+    </style>
+    <h1>Selector Before After</h1>
+    <ul class="list-post">
+        <li><a href="" class="new">Bài viết số 1</a></li>
+        <li><a href="" class="">Bài viết số 2</a></li>
+        <li><a href="" class="new">Bài viết số 3</a></li>
+        <li><a href="" class="">Bài viết số 4</a></li>
+    </ul>
+
+
+</body>
+
+</html>

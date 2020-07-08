@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Slider</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.5.1.js"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var scr_img_click, scr_img_first;
+
+            //4.Hiển thị hình ảnh mặc định
+            scr_img_first = $('#list-thumb li:first-child img').attr('src');
+            // console.log(scr_img_first);
+            $('#show img').attr('src', scr_img_first);
+            $('#list-thumb li:first-child').addClass('active');
+
+            $("#list-thumb li a").click(function() {
+                //Hiển thị hình ảnh được chọn
+                //Bước 1: Lâý src từ hinhg ảnh đã chọn
+                scr_img_click = $(this).children('img').attr('src')
+
+                $("#list-thumb li").removeClass('active');
+                $(this).parent('li').addClass('active');
+
+
+                //Bước 2: Gán src lấy được cho src của #show
+                $('#show img').attr('src', scr_img_click);
+                return false;
+            });
+        });
+    </script>
+    <div id="wrapper">
+        <h1>Basic Slider Product</h1>
+        <div id="wp-slider">
+            <div id="show">
+                <img src="images/product-1.jpg" alt="show" title="show">
+            </div>
+            <div id="wp-list-thumb">
+                <ul id="list-thumb">
+                    <li>
+                        <a href=""><img src="images/product-2.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/product-1.jpg" alt=""></a>
+                    </li>
+
+                    <li>
+                        <a href=""><img src="images/product-3.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/product-4.jpg" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

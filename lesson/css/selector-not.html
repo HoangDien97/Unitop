@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector not</title>
+</head>
+
+<body>
+    <style>
+        p:not(.active) {
+            color: blueviolet;
+        }
+        
+        #wrapper :not(p) {
+            background: chartreuse;
+        }
+    </style>
+    <div id="wrapper">
+        <h1>Selector not</h1>
+        <p>Items 1</p>
+        <p>Items 2</p>
+        <p class="active">Items 3</p>
+        <p>Items 4</p>
+        <p>Items 5</p>
+        <div>Link 1</div>
+        <div>Link 2</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Basic 1</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.5.1.js"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var src_img_click, src_img_first;
+            src_img_first = $('#list-thumb li:first-child img').attr('src');
+            // console.log(src_img_first);
+
+
+            //Rán src hình ảnh đầu tiền lên #show img 
+            $('#show img').attr('src', src_img_first);
+            $('#list-thumb li:first-child').addClass('active');
+
+
+            $("#list-thumb li a").click(function() {
+                //B1. Lấy src của thẻ img #list-thumb
+                src_img_click = $(this).children('img').attr('src');
+                // console.log(src_img_click);
+
+
+                $('#list-thumb li').removeClass('active');
+                $(this).parent('li').addClass('active');
+
+
+
+                //B2.Gán giá trị vừa lấy đưa lên #show
+                $('#show img').attr('src', src_img_click);
+
+
+                return false;
+            });
+        });
+    </script>
+    <div id="wrapper">
+        <h1>Slider Basic 1</h1>
+        <div id="wp-slider">
+            <div id="show">
+                <img src="images/amg_1.jpg" alt="">
+            </div>
+        </div>
+
+        <div id="wp-list-thumb">
+            <ul id="list-thumb">
+                <li>
+                    <a href=""><img src="images/amg_2.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href=""><img src="images/amg_1.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href=""><img src="images/amg_3.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href=""><img src="images/amg_4.jpg" alt=""></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

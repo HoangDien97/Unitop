@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiệu ứng fade</title>
+    <script src="js/jquery-3.5.1.js"></script>
+</head>
+
+<body>
+    <style type="text/css">
+        #box {
+            width: 200px;
+            padding: 40px;
+            background: #2ecc71;
+            color: blanchedalmond;
+            text-align: center;
+            display: none;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#effect-fadeIn").click(function() {
+                $("#box").fadeIn(1000);
+            });
+            $("#effect-fadeOut").click(function() {
+                $("#box").fadeOut(1000);
+            });
+            $("#effect-fadeToggle").click(function() {
+                $("#box").fadeToggle(1000);
+            });
+        });
+    </script>
+    <h1>Hiệu ứng fade trong jquery</h1>
+    <a href="#" id="effect-fadeIn">FadeIn</a>
+    <a href="#" id="effect-fadeOut">FadeOut</a>
+    <a href="#" id="effect-fadeToggle">FadeToggle</a>
+    <div id="box">
+        BOX
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit cum unde consectetur. Modi totam accusantium iste labore quibusdam perspiciatis magnam a eos accusamus quis! Laudantium, saepe ratione! Nulla quia facere assumenda aperiam aliquam ducimus,
+        deserunt laudantium hic quibusdam minus soluta dolorum eligendi sunt esse voluptas quidem facilis natus in! Eaque quae dolore harum natus alias, reprehenderit distinctio voluptatem placeat adipisci eveniet reiciendis molestias laboriosam ad. Sunt
+        obcaecati perferendis in voluptas aut consequatur rerum, ducimus accusantium expedita cumque, placeat ipsum beatae? At nam nobis rem velit doloremque quia veniam soluta quis aspernatur! Nihil ipsum fugit blanditiis. Eum numquam molestiae, magnam
+        voluptatibus provident ab atque laboriosam, temporibus itaque commodi nulla explicabo necessitatibus a? Deserunt unde, dolorum dignissimos sunt expedita magni, hic voluptates totam ipsa soluta tempore rerum consequuntur fugit nemo voluptatum amet
+        eveniet recusandae porro quia dicta ea maxime laudantium debitis. Officiis similique quisquam eos distinctio rem suscipit nihil esse est reprehenderit ex, illo molestias delectus facere provident exercitationem. Fugit nulla earum fugiat! Corrupti
+        nulla debitis rerum ipsam fuga placeat voluptas possimus temporibus laudantium cumque neque, obcaecati, et eius, consequuntur ea provident quam. Doloremque aliquid cupiditate commodi aperiam quod? Expedita repudiandae nulla temporibus fugiat.
+        Eaque minus modi iusto sapiente beatae corrupti nesciunt.</p>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngăn chặn hàng đợi hiệu ứng</title>
+    <script src="js/jquery-3.5.1.js"></script>
+</head>
+
+<body>
+    <style type="text/css">
+        #box {
+            width: 200px;
+            padding: 40px;
+            background: #2ecc71;
+            color: blanchedalmond;
+            text-align: center;
+            display: none;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#effect-slideDown").click(function() {
+                $("#box").stop().slideDown(500);
+            });
+            $("#effect-slideUp").click(function() {
+                $("#box").stop().slideUp(500);
+            });
+            $("#effect-slideToggle").click(function() {
+                $("#box").stop().slideToggle(500);
+            });
+        });
+    </script>
+    <h1>Ngăn chặn hàng đợi hiệu ứng</h1>
+    <a href="#" id="effect-slideDown">slideDown</a>
+    <a href="#" id="effect-slideUp">slideUp</a>
+    <a href="#" id="effect-slideToggle">slideToggle</a>
+    <div id="box">
+        BOX
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum non, doloremque doloribus nobis aut quod repellat consequatur debitis ratione corporis nostrum distinctio quibusdam? Cum excepturi esse quisquam quaerat voluptatum rem consequatur reprehenderit
+        aliquam? Amet, iste ducimus? Atque iure quod excepturi repudiandae consequuntur earum illo dignissimos sint pariatur ipsum fuga quisquam voluptatibus laudantium libero magni sunt qui numquam ducimus, sed eum explicabo impedit molestiae distinctio
+        aliquid! Assumenda deleniti nesciunt beatae natus atque, fugit sed ullam odio necessitatibus a reprehenderit similique. Velit magnam consequatur voluptas modi ipsa, consectetur nulla autem excepturi cumque doloremque error saepe dolor commodi
+        incidunt qui mollitia aliquam laborum? Modi quas, porro eum sint non dolores quisquam odio voluptatum distinctio laboriosam repudiandae, quae commodi rerum similique repellat est sit, praesentium accusantium velit? Sunt voluptates dicta ratione
+        id dolores tenetur aperiam omnis pariatur veniam. Suscipit sunt laboriosam, eius officia culpa mollitia commodi omnis? Praesentium pariatur repellat autem, fugit cum ab ullam minima perspiciatis facilis inventore placeat, magni recusandae voluptatem
+        debitis iusto nam aut optio eos eaque in ea nostrum illo voluptates sint! Molestias cum quae quisquam magnam, porro quis exercitationem necessitatibus minima delectus eveniet cupiditate quasi in vero. Nulla deserunt dolore distinctio iusto dignissimos
+        quae fuga esse labore explicabo nostrum.</p>
+</body>
+
+</html>

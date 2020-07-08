@@ -1,0 +1,30 @@
+body {
+    background: yellow;
+}
+
+
+/*Ipad ngang(1024 x 768)*/
+
+@media screen and (max-width:1024px) {
+    body {
+        background: black;
+    }
+}
+
+
+/*Ipad dọc(768 x 1024)*/
+
+@media screen and (max-width:768px) {
+    body {
+        background: blue;
+    }
+}
+
+
+/*Tablet nhỏ(480 x 640)*/
+
+@media screen and (max-width:480px) {
+    body {
+        background: pink;
+    }
+}

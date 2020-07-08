@@ -1,0 +1,52 @@
+ body {
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 16px;
+     line-height: 1.5;
+ }
+ 
+ .container {
+     max-width: 960px;
+     margin: 0px auto;
+     display: flex;
+     flex-wrap: wrap;
+ }
+ 
+ #header {
+     background: #0073aa;
+     flex: 100%;
+ }
+ 
+ #header h1 {
+     font-size: 20px;
+     margin: 0px;
+     line-height: 30px;
+     color: white;
+     padding: 15px 0px;
+ }
+ 
+ #wp-content {
+     background: #f4f4f4;
+     min-height: 600px;
+ }
+ 
+ #content {
+     flex: 600px;
+ }
+ 
+ #sidebar {
+     background: #e1e1e1;
+     flex: 360px;
+ }
+ 
+ #footer {
+     background: #232323;
+     color: white;
+     font-size: 20px;
+     line-height: 1.5;
+     padding: 5px 0px;
+     flex: 100%;
+ }
+ 
+ #footer p {
+     margin: 0px;
+ }
