@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <title>Tooltip Bootstrap</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Tooltip Bootstrap</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nobis et natus omnis rem provident, quos fuga vel molestiae enim ipsam facilis fugit odio pariatur eum esse, corrupti labore magni. Perferendis quas dolore porro optio, fuga
+                    repellendus fugit nulla assumenda quidem culpa earum rerum ex error ducimus soluta eius voluptatem!</p>
+                <form action="">
+                    Username: <input type="text" data-toggle="Tooltip" title="Tên đăng nhập nhiều hơn 6 ký tự" data-placement="bottom">
+                </form>
+                <button type="" class="btn btn-danger mt-2 ml-5" data-toggle="Tooltip" title="Bạn cần đăng ký để nhận được nhiều ưu đãi">Đăng ký</button>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nobis et natus omnis rem provident, quos fuga vel molestiae enim ipsam facilis fugit odio pariatur eum esse, corrupti labore magni. Perferendis quas dolore porro optio, fuga
+                    repellendus fugit nulla assumenda quidem culpa earum rerum ex error ducimus soluta eius voluptatem!</p>
+                <p>Lorem ipsum dolor sit <a href="" data-toggle="Tooltip" title="Tooltip for a">amet consectetur</a> adipisicing elit. Doloremque, vero.</p>
+                <p>Lorem ipsum dolor sit <a href="" data-toggle="Tooltip" title="Tooltip for a" data-placement="right">amet consectetur</a> adipisicing elit. Doloremque, vero.</p>
+                <p>Lorem ipsum dolor sit <a href="" data-toggle="Tooltip" title="Tooltip for a" data-placement="bottom">amet consectetur</a> adipisicing elit. Doloremque, vero.</p>
+                <p>Lorem ipsum dolor sit <a href="" data-toggle="Tooltip" title="Tooltip for a" data-placement="left">amet consectetur</a> adipisicing elit. Doloremque, vero.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="Tooltip"]').tooltip({
+                // placement: 'top',
+                // trigger: 'hover focus',
+                // html: true
+            });
+        });
+    </script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <title>Cảnh báo Alert Bootstrap</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Cảnh báo Alert trong Bootstrap</h1>
+                <h3>Ẩn Alert</h3>
+                <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+                    My alert
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <h3>Alert đa nội dung</h3>
+                <div id="myAlert" class="alert alert-success alert-dismissible fade show" role="alert">
+                    <h4 class="alert-heading">Thông báo!</h4>
+                    Bạn đã thêm bài viết thành công, bạn click <a href="" class="alert-link">vào đây</a> để trở về trang chủ
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum eum dolores error iusto quod ullam, fugit rerum, nesciunt ratione repudiandae magnam porro consectetur, earum quas. Recusandae qui temporibus, quidem velit eum,
+                        illo consectetur quasi, saepe obcaecati eos amet exercitationem pariatur dolore inventore officiis illum iure perferendis! Excepturi, accusantium?</p>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi expedita, consequatur tenetur debitis voluptatibus cumque maxime provident rem at quam!</p>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <h3>Alert Link</h3>
+                <div class="alert alert-warning">
+                    Bạn đã thêm bài viết thành công, bạn click <a href="" class="alert-link">vào đây</a> để trở về trang chủ
+                </div>
+                <h3>Alert Background</h3>
+                <div class="alert alert-danger" role="alert">
+                    Cảnh báo đơn giản trong hệ thống
+                </div>
+                <div class="alert alert-dark" role="alert">
+                    Cảnh báo đơn giản trong hệ thống
+                </div>
+                <div class="alert alert-info" role="alert">
+                    Cảnh báo đơn giản trong hệ thống
+                </div>
+                <div class="alert alert-light" role="alert">
+                    Cảnh báo đơn giản trong hệ thống
+                </div>
+                <div class="alert alert-primary" role="alert">
+                    Cảnh báo đơn giản trong hệ thống
+                </div>
+                <div class="alert alert-secondary" role="alert">
+                    Cảnh báo đơn giản trong hệ thống
+                </div>
+                <div class="alert alert-success" role="alert">
+                    Cảnh báo đơn giản trong hệ thống
+                </div>
+                <div class="alert alert-warning" role="alert">
+                    Cảnh báo đơn giản trong hệ thống
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            //thông báo sau khi ẩn
+            // $('#myAlert').on('close.bs.alert', function() {
+            //     alert("Đã ẩn alert");
+            // });
+
+            //Thông báo và ẩn cùng lúc
+            $('#myAlert').on('closed.bs.alert', function() {
+                alert("Đã ẩn alert");
+            });
+
+        });
+    </script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

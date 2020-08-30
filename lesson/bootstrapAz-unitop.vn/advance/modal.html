@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <title>Modal trong Bootstrap</title>
+</head>
+
+<body>
+    <style>
+        /* #demo-modal {
+            display: block;
+        } */
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Modal Bootstrap</h1>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#demo-modal">Show Modal</button>
+                <a href="" id="run-modal">Run Modal</a>
+                <div class="modal fade" id="demo-modal">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Demo Modal Unitop</h5>
+                                <button class="close" data-dismiss="modal">
+                                    <span>&times;</span>
+                                </button>
+                            </div>
+                            <!-- End header  -->
+                            <div class="modal-body">
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, minima!</p> -->
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-12 mb-2">
+                                            <div class="bg-secondary">Col-12</div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="bg-secondary">Col-6</div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="bg-secondary">Col-6</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End body  -->
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                <button class="btn btn-primary">Lưu</button>
+
+                            </div>
+                            <!-- End footer  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // $("#demo-modal").modal();
+            $('#run-modal').click(function() {
+                $("#demo-modal").modal();
+                return false;
+            });
+
+
+            // $('#demo-modal').on('show.bs.modal', function() {
+            //     alert("Show Modal");    
+            // });
+
+            // $('#demo-modal').on('shown.bs.modal', function() {
+            //     alert("Shown Modal");
+            // });
+            // $('#demo-modal').on('hide.bs.modal', function() {
+            //     alert("Hide Modal");
+            // });
+            $('#demo-modal').on('hidden.bs.modal', function() {
+                alert("Hidden Modal");
+            });
+        });
+    </script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

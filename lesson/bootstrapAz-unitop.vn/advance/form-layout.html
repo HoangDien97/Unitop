@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <title>Form Layout</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 bg-secondary">Sidebar Left</div>
+            <div class="col-md-8">
+                <h1 class="text-center">Form Layout Bootstrap</h1>
+                <h3>Form Inline</h3>
+                <form action="" class="form-inline">
+                    <label for="username" class="mr-sm-1">User Name</label>
+                    <input type="text" class="form-control mr-sm-3" name="username" id="username" placeholder="Username">
+                    <label for="password" class="mr-sm-1">Password</label>
+                    <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                </form>
+                <h3>Form Group</h3>
+                <form action="">
+                    <div class="form-group">
+                        <label for="username" class="">User Name</label>
+                        <input type="text" class="form-control" name="username" id="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="">Password</label>
+                        <input type="password" class="form-control" name="password" id="password">
+                    </div>
+                </form>
+                <h3>Form Grid</h3>
+                <form action="">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" name="username" id="username" placeholder="Username">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                        </div>
+                    </div>
+                </form>
+                <h3>Form Row</h3>
+                <form action="">
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" name="username" id="username" placeholder="Username">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                        </div>
+                    </div>
+                </form>
+                <h3>Form Grid + Form Row</h3>
+                <form action="">
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="username" class="">User Name</label>
+                                <input type="text" class="form-control" name="username" id="username" placeholder="Username">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="password" class="">Password</label>
+                                <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <h3>Form 2 column</h3>
+                <form action="">
+                    <div class="row form-group">
+                        <label for="username" class="col-md-2">User Name</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" name="username" id="username" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <label for="password" class="col-md-2">Password</label>
+                        <div class="col-md-10">
+                            <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-2 bg-secondary">Sidebar Right</div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

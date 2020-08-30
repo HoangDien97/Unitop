@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <title>Carousel SlideShow Bootstrap</title>
+</head>
+
+<body>
+    <style>
+        .carousel-item img {
+            max-height: 500px;
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="text-center">Carousel SlideShow Bootstrap</h1>
+
+                <div id="home-slide" class="carousel slide carousel-fade" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#home-slide" class="active" data-slide-to="0"></li>
+                        <li data-target="#home-slide" data-slide-to="1"></li>
+                        <li data-target="#home-slide" data-slide-to="2"></li>
+                        <li data-target="#home-slide" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active" data-interval="2000">
+                            <img src="images/sp-1.jpg" alt="" class="d-block w-100">
+                            <div class="carousel-caption text-primary">
+                                <h5>Caption</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, dignissimos?</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-interval="2000">
+                            <img src="images/category-1.jpg" alt="" class="d-block w-100">
+                            <div class="carousel-caption text-primary">
+                                <h5>Caption</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, dignissimos?</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-interval="2000">
+                            <img src="images/sp-1.jpg" alt="" class="d-block w-100">
+                            <div class="carousel-caption text-primary">
+                                <h5>Caption</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, dignissimos?</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-interval="2000">
+                            <img src="images/category-1.jpg" alt="" class="d-block w-100">
+                            <div class="carousel-caption text-primary">
+                                <h5>Caption</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, dignissimos?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End caroousel inner  -->
+                    <a href="#home-slide" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a href="#home-slide" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                    <!-- End control next prev  -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <!-- <script>
+            $(document).ready(function() {
+                $('#home-slide').carousel({
+                    interva: 2000,
+                    ride: "caroousel"
+                });
+            }); -->
+    </script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
